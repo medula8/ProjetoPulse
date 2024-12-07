@@ -1,0 +1,85 @@
+.menu:hover{
+
+}
+
+.caixa1{
+    padding: 15px;
+    background-color: #abbff5;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.carousel-inner {
+    position:relative; /*Ao mover o elemento, ele não interfere nos outros elementos ao seu redor*/
+}
+
+.carousel-control-prev, .carousel-control-next {
+    position: absolute; /*Posiciona um elemento em relação ao elemento pai mais próx.*/
+    top: 50%; /*Posiciona a 50% da altura do elemento filho*/
+    transform: translateY(-50%);/*Move o elemento ao longo do eixo vertical Y*/
+    width: 5%; /*Ajuste da largura das setas*/
+    z-index: 1; /*Garante que fiquem sobre a imagem*/
+    background-color: rgba(0,0,0,0.5); /*Um fundo semitransparente*/
+}
+
+
+menu {  
+    background-color: indigo;
+    width: 100%;
+    height: 100%px;
+    padding: 10px 25px;/*Adiciona espaço ao redor do conteúdo do menu*/
+    text-align: center;
+    display: flex;/*Usar um layout flexível para alinhar os ementos*/
+    justify-content: center;/*Alinhar os elementos horizontalmente*/
+    gap: 60px;/*Define a distancia entre os elementos*/
+    color:black;
+    border-radius: 8px;
+    margin: 8px 40px;
+
+    /*alterações da aula 26/10*/
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    margin-top:0; 
+
+}
+
+    #titulo1{
+        margin-top: 5%;
+        margin-left: 2%;
+    }
+
+    .menu-itens{color:black; /*Define a cor do texto*/
+        text-decoration: none; /*Retira o traço de link da palavra*/
+        padding: 15px;
+        font-size: 18px; /*Define o tamanho do texto*/
+        display: flex;
+        background-size: 10% inline-block;/*Deixa o item com o bloco de uma 
+        linha */
+    }
+    /*Hover é um evento de mouse que ocorre uma ação toda vez que colocamos o mouse em cima do elemento. Abaixo aplicamos um evento de mouse no nosso menu*/
+    .menu-itens:hover{
+    /*Quando colocarmos o mouse sob o elemento iremos:*/
+    background-color: #d0dbf8;/*Trocar a cor de fundo*/
+    color: #260d61;/*A cor do texto*/
+    width: 220px;/*Ajustaremos larguda do elemento*/
+    padding: 15px 25px;/*A distancia do conteúdo*/
+    border-radius: 8px;/*Arredondar as bordas de um elemento*/
+    display:flex;
+
+    }
+
+    footer{
+        background-color: #260D61;
+        height: 50px;
+        color:aliceblue;
+        justify-items: center;
+        padding-top: -1%;
+        margin-bottom: 0%;
+    }
+
+    
